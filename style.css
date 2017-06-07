@@ -1,0 +1,91 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    text-align: center
+}
+
+ul,
+li {
+    list-style: none
+}
+
+ul.container {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden
+}
+
+ul.container li {
+    float: left;
+    padding-top: 11px;
+    width: 228px;
+    overflow: hidden;
+    padding-right: 22px
+}
+
+ul.container li .cast {
+    float: left;
+    width: 228px;
+    position: relative;
+    height: 317px;
+    color: #7F7F7F
+}
+
+ul.container li .cast img {
+    width: 228px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 317px
+}
+
+ul.container li .cast .desc {
+    width: 186px;
+    position: absolute;
+    z-index: 10;
+    background: #F00;
+    FILTER: alpha(opacity=60);
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    left: 10px;
+    bottom: 15px;
+    height: 250px;
+    float: left;
+    text-align: left;
+    padding: 15px 12px 0 12px
+}
+
+ul.container li .cast .desc h3 {
+    line-height: 20px;
+    padding-bottom: 10px;
+    display: block;
+    color: #FFF;
+    overflow: hidden
+}
+
+ul.container li .cast .desc .bio {
+    line-height: 18px;
+    height: 220px;
+    display: block;
+    color: #FFF;
+    overflow: hidden
+}
+
+ul.container li:hover .cast {
+    color: #7F7F7F;
+    text-decoration: none
+}
+
+img {
+    border: none;
+}
